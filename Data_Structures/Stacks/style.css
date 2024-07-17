@@ -1,0 +1,103 @@
+:root {
+    --background-color: #282f30;
+    --item-border-color: #364557;
+    --item-background-color: #555494;
+    --body-text-color: #e0dc8b;
+    --h2-text-color: #e7f2b1;
+
+    --stack-print-color: #bdb3a8;
+}
+
+html {
+    background-color: var(--background-color);
+    height: 100%;
+}
+
+body {
+    font-family: "VT323", monospace;
+    text-align: center;
+    color: var(--body-text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    color: var(--body-text-color);
+}
+
+.container {
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.simple-stack {
+    justify-content: space-around;
+    margin-top: 50px;
+    flex: auto;
+
+}
+
+.structure {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.item {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid var(--item-border-color);
+    width: 40%;
+    text-align: center;
+    background-color: var(--item-background-color);
+    border-radius: 5px;
+}
+
+.stack-print {
+    color: var(--stack-print-color);
+}
+
+.stack-controls {
+    border: 1px solid var(--body-text-color);
+    border-radius: 15pd;
+    padding: 20px;
+    width: 25%;
+}
+
+#stack-input {
+    width: 80%;
+    border-radius: 5px;
+    color: var(--item-border-color);
+}
+
+#stack-button {
+    margin-top: 5px;
+    border: 2px solid var(--body-text-color);
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    background-color: var(--item-background-color);
+    color: var(--body-text-color);
+}
+
+#stack-button:hover {
+    background-color: var(--body-text-color);
+    color: var(--item-background-color);
+}
+
+a {
+    color: var(--body-text-color);
+}
+
+a:hover {
+    color: var(--stack-print-color);
+}
+
+#footer {
+    text-align: center;
+    color: var(--stack-print-color);
+    margin-top: auto;
+    padding: 10px;
+}

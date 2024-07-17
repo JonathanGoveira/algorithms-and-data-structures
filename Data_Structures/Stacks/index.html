@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jonathan Gonçalves">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Simple Stack</title>
+</head>
+<body>
+    <script type="text/javascript" src="stack.js"></script>
+    <h1>Data Structure - Different Types of Stacksp</h1>
+    <div class="container">
+
+        <div class="simple-stack">
+            <div class="stack-controls">
+                <h2> Simple Stack</h2>
+                <div class="stack-print">
+                    <p id="stack-print"></p>
+                </div>
+                <input type="text" id="stack-input" placeholder="enter value">
+                <div class="stack-button">
+                    <button onclick="pushStack()" id="stack-button">Push</button>
+                    <button onclick="popStack()" id="stack-button">Pop</button>
+                    <button onclick="peekStack()" id="stack-button">Peek</button>
+                    <button onclick="isEmptyStack()" id="stack-button">IsEmpty</button>
+                    <button onclick="sizeStack()" id="stack-button">Size</button>
+                </div>
+                <div class="structure" id="stack-structure"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer">
+        <p>Create by <a href="https://github.com/JonathanGoveira">Jonathan Gonçalves</a></p>    
+    </footer>
+</body>
+</html>
